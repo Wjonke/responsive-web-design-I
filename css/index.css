@@ -1,4 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -59,179 +58,322 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
-
-
-
-/*                   dont touch above                   */
-
-
-
-
-
-
-
-
-
-
-
-body{
+/*CSS for index*/
+.header-container {
+	/* border: 1px solid blue; */
+	height: 200px;
 	display: flex;
-	height: 1390px;
-	width: 1025px;
-	margin-left: 12%;
-	
-}
-
-
-
-
-/*---------------------------------------------------*/
-
-
-
-nav div{
-	display:inline-flex;
-	width:1024px;
-	padding-top:20px;
-	
-}
-
-.navbar{
-	display:flex;
-	justify-content: space-evenly;
-	text-decoration: none;
-	height: 60px;
-	padding-top: 18px;
-	width: 127Px;
-	align-content: flex-start; 
-
-}
-
-
-nav div a{
-	display:flex;
-	font-style: normal;
-	color: darkgray;
-
-}
-
-.logo{
-	display: flex;	
-	height: 40px;
-	margin-top:5px;
-}
-
-
-
-
-
-
-/*---------------------------------------------------*/
-
-.getStarted{
-	background: white;
-	border: 1px solid black;
-	height: 33px;
-	width: 170px;
-	margin-right: 30px;
-	margin-top: 15px;
-	
-}
-
-
-header{
-	display: flex;
-	border-bottom: 3px solid black;
-	padding-bottom: 35px;
-	width: 900px;
-	margin-left: 60px;
-}
-
-.headerLeft{
-	font-family:'Bangers';
-	font-size:4.7em;
-	width:49%;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
+	justify-content: center;
 	align-items: center;
-	margin-top: 108px;
-	margin-left:135px;
-	margin-right:80px;
 }
-button{
-	width:100px;
-	margin:20px;
-	font-size: 15px;
-	font-weight: 600;
+
+.nav-menu a {
+	font-family: 'Titillium Web';
+	color: #bfbfbf;
+	text-decoration: none;
+	/* border: 1px solid red; */
+	padding: 50px;
+	width: 160px;
+}
+
+.logo {
+	/* border: 1px solid red; */
+	padding: 50px;
+}
+
+
+.main-container {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+.body-container {
+	display:flex;
+	flex-direction: column;
+	/* border: 1px solid red; */
+	justify-content: center;
+	align-items: center;
+}
+
+.header1 {
+	font-size: 100px;
+	text-align: center;
+	/* border: 1px solid red; */
+	width: 500px;
+	height: 300px;
+}
+
+.get-started {
+	border: 1px solid black;
+	width: 160px;
+	padding: 10px 40px 10px 40px;
+	margin-left: 170px;
+}
+
+.circle-logo {
+	/* border: 1px solid red; */
+}
+
+.features-about {
+	display: flex;
+	justify-content: center;
+}
+
+.info {
+	border-top: 1px solid black;
+	width: 430px;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+.info2 {
+	border-bottom: 1px solid black;
+	width: 280px;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+
+.middle-img {
+	/* border: 1px solid red; */
+	width: 820px;
+}
+
+.copyright {
+	/* border: 1px solid red; */
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+
+.contact {
+	margin-right: 650px;
+}
+
+
+
+
+
+
+/*CSS for services*/
+
+.header-container2 {
+	/* border: 1px solid blue; */
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-menu2 a {
+	font-family: 'Titillium Web';
+	color: #bfbfbf;
+	text-decoration: none;
+	/* border: 1px solid red; */
+	padding: 25px;
+}
+
+.logo2 {
+	/* border: 1px solid red; */
+	padding-left: 110px
+}
+
+.new-services {
+	/* border-bottom: 1px solid black; */
+	width: 880px;
+	padding-top: 30px;
+	padding-bottom: 50px;
 	margin-left: 30px;
 }
 
-.headerRight{
-	width:49%;
-	margin-bottom: 40px;
-	margin-top: 55px;
-	margin-right: 20px;
-	
+.info-box {
+	border: 1px solid black;
+	width: 400px;
+	padding: 20px;
+	margin: 30px;
 }
 
-
-/*---------------------------------------------------*/
-p {
-	line-height: 1.2;	
+.learn-more {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 180px;
+	padding: 10px 50px 10px 50px;
+	margin-top: 20px;
 }
 
-article{
-	width:890px;
-	border: 1px solid red;
-	margin-left: 60px;
-	padding-top: 33px; 
-	padding-left: 10px;
+.new-header1 {
+	font-size: 30px;
+	font-weight: bold;
 }
 
-
-article .aboveImg{
-	width: 49%;
-	display: inline-block;
+.new-header2 {
+	font-size: 20px;
+	font-weight: bold;
 }
 
-article .middleImg{
-	margin-left: 02px;
-	margin-top: 27px;
-	margin-bottom: 30px;
-	width: 876px;
-}
-
-article .belowImg{
-	width: 33%;
-	display: inline-block;
-	padding-bottom: 28px;
-	border-bottom: 3px solid black;
-}
-
-
-
-address{
-	flex-direction: column;
+.two-box {
 	display: flex;
-	height: 140px;
-	margin-top: 33px;
-	margin-left: 70px;
-	
+}
+
+.bar {
+	border-top: 1px solid black;
+	width: 860px;
+	margin-left: 30px;
+	height: 30px;
+}
+
+.facts {
+	/* border: 1px solid red; */
+	width: 420px;
+	padding-bottom: 20px;
+}
+
+.list {
+	list-style-type: square;
+	margin-left: 20px;
+}
+
+.services-header-img {
+	/* border: 1px solid red; */
+	width: 880px;
+	margin: 30px;
+}
+
+.fact-and-image {
+	border-top: 3px solid black;
+	display: flex;
+	padding-top: 30px;
+	width: 860px;
+	margin-left: 30px;
+}
+
+.new-body-container {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: column;
+	width: 940px;
+	align-self: center;
+}
+
+.everything {
+	display: flex;
+	flex-direction: column;
+}
+
+.services-info-img {
+	/* border: 1px solid red; */
+	padding-left: 20px;
 }
 
 
 
-/*---------------------------------------------------*/
+/* resonsive CSS*/
 
+@media (max-width: 800px) {
+    .header-container {
+        flex-direction: column-reverse;
+    }
 
+    .main-container {
+        margin-top: 50px;
+    }
 
-footer{
-display: flex;
-height: 40px;
-justify-content: center;
-margin-top: 25px;
-margin-right: 15px;
+    .nav-menu a {
+        padding: 10px 35px 10px 35px;
+    }
+
+    .circle-logo {
+        display: none;
+    }
+
+    .info {
+        width: 371px;
+    }
+
+    .middle-img {
+        width: 730px;
+    }
+
+    .info2 {
+        width: 250px;
+    }
+
+    .contact {
+        margin-right: 570px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-container {
+        flex-direction: column-reverse;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .nav-menu a {
+        border: 1px solid black;
+        padding: 20px;
+        width: 500px;
+        text-align: center;
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    .circle-logo {
+        display: none;
+    }
+    
+    .main-container {
+        margin-top: 400px;
+        border-bottom: 1px solid black;
+        width: 400px;
+        margin-left: 30px;
+        padding-bottom: 50px;
+    }
+
+    .features-about {
+        display: block;
+    }
+
+    
+    .features-about2 {
+        display: block;
+        border-bottom: 1px solid black;
+        margin-bottom: 30px;
+        width: 410px;
+    }
+
+    .info {
+        border: 0;
+        width: 447px;
+        margin-bottom: 30px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .middle-img {
+        width: 410px;
+        /* margin-top: 30px; */
+        margin-bottom: 30px;
+    }
+
+    .info2 {
+        border: 0;
+        width: 450px;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-bottom: 30px;
+        padding-left: 0;
+    }
+
+    .contact {
+        margin-right: 270px;
+        margin-bottom: 20px;
+    }
 }
