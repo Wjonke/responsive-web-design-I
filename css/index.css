@@ -1,3 +1,266 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+/*CSS for index*/
+
+
+.header-container {
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-menu a {
+	font-family: 'Titillium Web';
+	color: #bfbfbf;
+	text-decoration: none;
+	padding: 50px;
+	width: 160px;
+}
+
+.logo {
+	padding: 50px;
+}
+
+
+.main-container {
+	display: flex;
+	justify-content: center;
+}
+
+.body-container {
+	display:flex;
+	flex-direction: column;
+	/* border: 1px solid red; */
+	justify-content: center;
+	align-items: center;
+}
+
+.header1 {
+	font-size: 100px;
+	text-align: center;
+	/* border: 1px solid red; */
+	width: 500px;
+	height: 300px;
+}
+
+.get-started {
+	border: 1px solid black;
+	width: 160px;
+	padding: 10px 40px 10px 40px;
+	margin-left: 170px;
+}
+
+.circle-logo {
+	/* border: 1px solid red; */
+}
+
+.features-about {
+	display: flex;
+	justify-content: center;
+}
+
+.info {
+	border-top: 1px solid black;
+	width: 430px;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+.info2 {
+	border-bottom: 1px solid black;
+	width: 280px;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+
+.middle-img {
+	width: 820px;
+}
+
+.copyright {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+
+.contact {
+	margin-right: 650px;
+}
+
+
+
+/* resonsive CSS*/
+
+@media (max-width: 800px) {
+    .header-container {
+        flex-direction: column-reverse;
+    }
+
+    .main-container {
+        margin-top: 50px;
+    }
+
+    .nav-menu a {
+        padding: 5px 40px 5px 40px;
+    }
+
+    .circle-logo {
+		display: none;
+		
+    }
+
+    .info {
+		width: 395px;
+		margin-bottom: 20px;
+		margin-top: 60px;
+		padding-top: 30px;
+    }
+
+    .middle-img {
+		width: 750px;
+    }
+
+    .info2 {
+		width: 250px;
+		padding-bottom: 40px;
+
+    }
+
+    .contact {
+        margin-right: 570px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-container {
+        flex-direction: column-reverse;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .nav-menu a {
+        border: 1px solid black;
+        padding: 20px;
+        width: 500px;
+        text-align: center;
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    .circle-logo {
+        display: none;
+    }
+    
+    .main-container {
+        margin-top: 400px;
+        border-bottom: 1px solid black;
+        width: 400px;
+        margin-left: 30px;
+        padding-bottom: 50px;
+    }
+
+    .features-about {
+        display: block;
+    }
+
+    
+    .features-about2 {
+        display: block;
+        border-bottom: 1px solid black;
+        margin-bottom: 30px;
+        width: 410px;
+    }
+
+    .info {
+        border: 0;
+        width: 447px;
+        margin-bottom: 30px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .middle-img {
+        width: 410px;
+        /* margin-top: 30px; */
+        margin-bottom: 30px;
+    }
+
+    .info2 {
+        border: 0;
+        width: 450px;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-bottom: 30px;
+        padding-left: 0;
+    }
+
+    .contact {
+        margin-right: 270px;
+        margin-bottom: 20px;
+    }
+}
